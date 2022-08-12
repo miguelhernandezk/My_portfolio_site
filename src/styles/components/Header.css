@@ -1,0 +1,42 @@
+.Header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 6.4rem;
+    padding: 0 1rem;
+}
+
+.Header ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.Header-menu{
+    font-size: var(--h1-sm);
+    cursor: pointer;
+    transition: font-size 300ms;
+}
+
+@media(min-width: 600px){
+    .Header-menu{
+        font-size: var(--h1-md);
+    }
+}
+
+@media(min-width: 1300px){
+    .Header{
+        height: 8rem;
+        padding: 2rem;
+    }
+    .Header ul{
+        flex-direction: row-reverse;
+    }
+    .Header-menu{
+        font-size: var(--h1-md);
+    }
+}

@@ -1,0 +1,22 @@
+.Blog{
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+}
+
+.Blog h1{
+    font-family: 'Anton', sans-serif;
+    font-size: var(--h1-lg);
+    line-height: var(--h1-lg);
+    color: var(--main-color);
+    margin-bottom: 4rem;
+    animation: text-load var(--anim-dur) ease-in;
+}
+
+.Blog-container{
+    margin-right: 0;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 4rem;
+}

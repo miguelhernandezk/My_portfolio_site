@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+html{
+    font-size: 62.5%;
+    /* Colors section */
+    --main-color: #79f7d9;
+    --main-bg-color: #1d1d1d;
+    --sec-bg-color: #181818;
+    --sec-text-color-dark: #8d8d8d;
+    --forms-color: #2b2b2b;
+    --color-1: #c7d079;
+    --color-2: #81d8f7;
+    --color-3:#e94152;
+    --color-4: #f3a433;
+    --color-6: #79f7d9;
+
+    /* Font sizes section */
+    --h1-sm: 3.5rem;
+    --h1-md: 4.5rem;
+    --h1-lg: 7rem;
+    --h1-spacing-sm: 2rem;
+    --h1-spacing-md: 2.5rem;
+    --h1-spacing-lg: 4.5rem:;
+    --p-fs-nm: 1.6rem;
+
+    /* Timing section */
+    --anim-dur: 500ms;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+    background-color: var(--main-bg-color);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+
+.Main{
+    margin: 0;
+    background-color: var(--main-bg-color);
+    box-sizing: border-box;
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+a{
+    color: var(--main-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes text-load{
+    0%{
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+}
+
+@keyframes skill-animation{
+    0%{
+        transform: scale(0);
+    }
+    90%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes blur-in {
+    0%{
+        filter: blur(0.4rem);
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    90%{
+        transform: scale(1.3);
+    }
+    100%{
+        filter: blur(0);
+        transform: scale(1);
+        opacity: 1;
+    }
 }

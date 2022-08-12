@@ -1,0 +1,104 @@
+.About{
+    flex-grow: 1;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+.About-description, .About-animation{
+    width: 100%;
+}
+
+.About-description{
+    font-family: Roboto;
+    font-size: var(--p-fs-nm);
+}
+
+.About-description > h1{
+    margin-bottom: 3.2rem;
+    animation: text-load var(--anim-dur) ease-in;
+    animation-fill-mode: forwards;
+    font-family: 'Anton', sans-serif;
+    color: var(--main-color);
+    font-size: var(--h1-sm);
+    line-height: var(--h1-sm);
+    transition: font-size 300ms, line-height 300ms;
+}
+
+.About-description p {
+    margin-bottom: 32px;
+}
+
+.About-description p:nth-child(2) {
+    animation: text-load var(--anim-dur) ease-in 300ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+}
+
+.About-description p:nth-child(3) {
+    animation: text-load var(--anim-dur) ease-in 600ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.About-description p:nth-child(4) {
+    animation: text-load var(--anim-dur) ease-in 900ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.About-description p:nth-child(5) {
+    animation: text-load var(--anim-dur) ease-in 1200ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.About-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    transform: scale(0.8);
+    transition: transform 300ms;
+}
+
+.tagcloud {
+    font-family: 'Poppins', sans-serif;  
+    font-size: 20px;
+    font-weight: 650;
+    color: var(--main-color);
+  }
+
+.tagcloud--item:hover {
+    color: #36454F;
+}
+
+@media(min-width: 600px){ 
+    .About-description > h1{
+        font-size: var(--h1-md);
+        line-height: var(--h1-md);
+    }
+
+    .content{
+        transform: scale(1.1);
+    }
+}
+
+@media(min-width: 900px){
+    .About{
+        margin-top: 0rem;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 8rem;
+    }
+    .About-description > h1{
+        font-size: var(--h1-lg);
+        line-height: var(--h1-lg);
+    }
+
+}

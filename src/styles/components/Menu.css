@@ -1,0 +1,172 @@
+.Menu{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    font-size: 1.6rem;
+    color: var(--sec-text-color-dark);
+    background-color: var(--sec-bg-color);
+}
+
+.Menu-list{
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Menu-top{
+    cursor: pointer;
+    background-color: #000000;
+}
+
+.Menu-top a:link{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Menu-top figure{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.Menu-top img{
+    padding: 0.8rem;
+    width: 100%;
+    max-width: 20rem;
+    border-radius: 50%;
+}
+
+.Menu-top p{
+    text-align: center;
+    padding: 0.8rem 0;
+    font-weight: bold;
+    color: white;
+}
+
+.Menu-top p:nth-child(3){
+    text-align: center;
+    padding: 0.8rem 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--sec-text-color-dark);
+}
+
+.Menu-top > span{
+    position: absolute;
+    top: 1.8rem;
+    right: 1.8rem;
+    font-size: 3rem;
+    color: white;
+}
+
+.Menu-middle{
+    text-align: center;
+}
+
+
+.Menu-item{
+    padding: 12px 0;
+    border-top-style: solid;
+    border-top-width: 0.5px;
+    border-top-color: var(--sec-text-color-dark);
+    cursor: pointer;
+}
+
+.Menu-item div a{
+    color: var(--sec-text-color-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 300ms;
+}
+
+.Menu-item div:hover a{
+    color: var(--main-color);
+    transform: scale(1.2);
+}
+
+.Menu-item div a:link{
+    text-decoration: none;
+}
+
+.Menu-middle li:last-child{
+    border-bottom-style: solid;
+    border-bottom-width: 0.5px;
+    border-bottom-color: var(--sec-text-color-dark);
+}
+
+.Menu-social{
+    padding: 2rem;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.Social-item{
+    padding: 0.5rem 0.5rem;
+}
+
+.Social-item a{
+    color: var(--sec-text-color-dark);
+}
+
+.Social-item a:hover{
+    color: var(--main-color);
+}
+
+.my-menu-enter {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.my-menu-enter-active {
+    opacity: 1;
+    transition: opacity 300ms, transform 300ms;
+}
+
+.my-menu-exit {
+    opacity: 1;
+}
+
+.my-menu-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 300ms, transform 300ms;
+}
+
+@media(min-width: 1200px){
+    .Menu{
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 25rem;
+    }
+    .my-menu-enter {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    
+    .my-menu-enter-active {
+        opacity: 1;
+        transform: translateX(0);
+        transition: opacity 300ms, transform 300ms;
+    }
+    
+    .my-menu-exit {
+        opacity: 1;
+    }
+    
+    .my-menu-exit-active {
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: opacity 300ms, transform 300ms;
+    }
+}
