@@ -129,11 +129,13 @@
 
 .my-menu-enter-active {
     opacity: 1;
+    transform: scale(1);
     transition: opacity 300ms, transform 300ms;
 }
 
 .my-menu-exit {
     opacity: 1;
+    transform: scale(1);
 }
 
 .my-menu-exit-active {

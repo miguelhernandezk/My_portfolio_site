@@ -19,4 +19,12 @@
     width: 100%;
     flex-wrap: wrap;
     gap: 4rem;
+    justify-content: center;
+}
+
+
+@media(min-width: 680px){
+    .Blog-container{
+        justify-content: flex-start;
+    }
 }
