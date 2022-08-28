@@ -4,9 +4,8 @@
     height: 40rem;
     background-color: var(--sec-bg-color);
     padding: 4rem 3.2rem;
-    border-top: 0.2rem solid;
-    color: var(--color-1);
-    
+    border-top: 0.2rem solid var(--color-1);
+    color: white;
 }
 
 .Card h2{
@@ -32,3 +31,42 @@
     width: 100%;
 }
 
+.CardV2{
+    border-top: 0.2rem solid var(--color-2);
+}
+
+.CardV3{
+    border-top: 0.2rem solid var(--color-3);
+}
+
+.CardV4{
+    border-top: 0.2rem solid var(--color-4);
+}
+
+.CardV5{
+    border-top: 0.2rem solid var(--main-color);
+}
+
+.CardV2 h2 a{
+    text-decoration: none;
+    color: var(--color-2);
+}
+
+.CardV3 h2 a{
+    text-decoration: none;
+    color: var(--color-3);
+}
+
+.CardV4 h2 a{
+    text-decoration: none;
+    color: var(--color-4);
+}
+
+.CardV5 h2 a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.Card h2 a:hover{
+    text-decoration: underline;
+}
